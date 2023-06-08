@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #303f9f;
+    color: white;
+  }
+
+  .button-container {
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .board-container {
+    margin-bottom: 20px;
+    background-color: #673ab7;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    justify-items: center;
+  }
+
+  .board-cell {
+    background-color: #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+  }
+
+  .selected {
+    background-color: #ffcc00;
+  }
+
+  .player-boards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .player-board {
+    background-color: #673ab7;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .player-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .player-cell {
+    background-color: #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+  }
+
+  .player-cell.selected {
+    background-color: #ffcc00;
+  }
